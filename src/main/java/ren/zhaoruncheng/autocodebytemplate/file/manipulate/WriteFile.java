@@ -21,6 +21,7 @@ public class WriteFile {
 		try{
 			OutputStreamWriter writer=new OutputStreamWriter(new FileOutputStream(file),encoding);
 			BufferedWriter bufferedWriter=new BufferedWriter(writer);
+			//System.out.println(code);
 			bufferedWriter.write(code);
 			//writer.close();
 			bufferedWriter.close();

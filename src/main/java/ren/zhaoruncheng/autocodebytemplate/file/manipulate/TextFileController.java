@@ -16,6 +16,9 @@ public class TextFileController implements FileCopyInterface{
 		
 		ReadFile reader=new ReadFile(file);
 		String source=reader.getString();
-		baseReplace.replace(source);
+		String reuslt=baseReplace.replace(source);
+		WriteFile writer=new WriteFile(file);
+		writer.Write(reuslt);
+		
 	}
 }

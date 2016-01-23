@@ -41,7 +41,7 @@ public class ReadFile {
 			System.out.println("reader file error");
 			 e.printStackTrace();
 		}
-		
+		//System.out.println(sb.toString());
 		return sb.toString();
 	}
 	
